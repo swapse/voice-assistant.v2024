@@ -53,7 +53,7 @@ def response(voice):
             webbrowser.get().open(url)
             speak("{}opening".format(search))
         if "open spotify" in voice:
-            os.startfile(r"C:\Users\axi-s\AppData\Roaming\Spotify\Spotify.exe")
+            os.startfile(r"C:\Users\axi-s\AppData\Roaming\Spotify\Spotify.exe")    # your spotify adress
             speak("spotify opening")
         if "open youtube" in voice:
             speak("youtube opening what do you want?")
@@ -82,7 +82,6 @@ def speak(string):
 #             voice = wake.lower()
 #             print(wake)
 #             response(voice)
-
 
 
 
