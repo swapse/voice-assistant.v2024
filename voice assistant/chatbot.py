@@ -27,7 +27,6 @@ def record(ask = False):
 
 
 def response(voice):
-        # speak("hello user how can i help you?")
         if "hello" in voice:
             speak("hello bro how can i help you") 
         if "wait" in voice:
@@ -70,35 +69,7 @@ def speak(string):
     playsound(dosya)
     os.remove(dosya)
 
-
-
-
-
-# def testo(wake):
-#     if "okay chris" in wake:
-#         playsound("DING.mp3")
-#         wake = record()
-#         if wake != "":
-#             voice = wake.lower()
-#             print(wake)
-#             response(voice)
-
-
-
-# def speak(string):
-#     tts = gTTS(text=string, lang="en", slow=False)
-#     dosya = "konus.mp3"
-#     tts.save(dosya)
-#     playsound(dosya)
-#     os.remove(dosya)
-
-
 playsound("DING.mp3")
-# speak("hello user how can i help you")
-
-
-
-
 while True:
     wake = record()
     if wake != "":
